@@ -5,18 +5,31 @@
 /* ==========================================================================
   Foundation
 ========================================================================== */
-
+@import 'foundation/_base.scss';
+@import 'foundation/_fonts.scss';
+@import 'foundation/_reset.scss';
+@import 'foundation/_settings.scss';
 /* ==========================================================================
-  Foundation
+  layout
 ========================================================================== */
-
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_layout.scss';
 /* ==========================================================================
   Project
 ========================================================================== */
+@import 'object/project/_about-us.scss';
+@import 'object/project/_blogs.scss';
+@import 'object/project/_contact.scss';
+@import 'object/project/_discover.scss';
+@import 'object/project/_gallery.scss';
+@import 'object/project/_mainvisual.scss';
+@import 'object/project/_travel.scss';
+@import 'object/utility/_mixin.scss';
+@import 'object/project/_p-bloc.scss';
 
 /* ==========================================================================
   Component
 ========================================================================== */
-h1 {
-  color: #f00;
-}
+@import 'object/component/_c-btn.scss';
+@import 'object/component/_c-title.scss';
