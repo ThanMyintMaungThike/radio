@@ -1,0 +1,114 @@
+.p-about-us{
+    background-color: #0a0d13;
+}
+
+.myDiv{
+    display: flex;
+}
+
+.leftDiv{
+    width: 50%;
+    position: relative;
+}
+
+.rightDiv{
+    width: 50%;
+    
+}
+
+.rightDiv img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.info{
+    
+    height: 543px;
+    position: absolute;
+    
+    left: 20%;
+    top: 120px; 
+}
+
+.myBox{
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(64, 59, 59);
+    width: 700px;
+    height: 130px;
+}
+
+.title{
+    color: white;
+    font-size: 42px;
+    font-family: $playfair;
+    font-weight: 800;
+
+}
+
+.para{
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: $muli;
+    font-weight: 300;
+    width: 500px;
+}
+
+.partition{
+    color: white;
+    font-size: large;
+    width: 33%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.myBox .border {
+    width: 2px;
+    height: 50px;
+    margin-top: 40px;
+    background:rgba(43, 49, 60,0.3);
+}
+
+@media screen and (max-width: 1000px) {
+    .para{
+        width: 250px;
+    }
+    .myBox{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .myDiv{
+        display: block;
+    }
+
+    .para{
+        width: 400px;
+    }
+
+    .info{
+        position: static;
+        margin-left: 100px;
+        padding-top: 70px;
+    }
+
+    .rightDiv{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .myBox{
+        width: 500px;
+    }
+
+    .info{
+        margin-left: 50px;
+    }
+}
