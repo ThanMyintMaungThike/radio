@@ -7,7 +7,7 @@
 }
 
 @mixin muliRegular{
-    font-family: $muli;
+    font-family: $muli; 
     font-size: 18px;
     font-weight: 400;
     line-height: 1;
@@ -15,7 +15,7 @@
 }
 @mixin li {
     width: 90px;
-    height: 84px;
+    height: 85px;
     margin: 0 auto;
     text-align: center;
     line-height: 84px;
