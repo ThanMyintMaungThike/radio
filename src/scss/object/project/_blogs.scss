@@ -1,0 +1,54 @@
+.card-blog {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card {
+            max-width: 337px;  
+            height: 337px;
+            position: relative;
+            .img-box {
+                width: 100%;
+                height: 100%;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                
+            }
+            .txt-box-bg {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                color: $white;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .txt-box {
+                width: 80%;
+                position: absolute;
+                bottom: 3%;
+                background: none;
+                left: 3%;
+            }
+            p {
+                @include muliRegular;
+            }
+        }
+
+    }
+    @media screen and (max-width: 1350px) {
+        .card-blog {
+            gap: 50px 0;
+        }
+    }
+    @media screen and (max-width: 1010px) {
+        .card-blog {
+            justify-content: space-around;
+        }
+    }

@@ -1,0 +1,94 @@
+.l-header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #93A0A7;
+    z-index: 2;
+    .btn {
+        display: none;
+    }
+    .l-header__wrap {
+        display: flex;
+        justify-content: space-between; 
+        height: 85px;
+        align-items: center;
+    }
+    &__logo {
+        h1 {
+            width: 90px;
+            height: 80px;
+            line-height: 80px;
+            a {
+                @include radio;
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 70px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 0 50px;
+            li {
+                @include li;
+                &.is-active {
+                    border-bottom: 3px solid $brandColor;
+                }
+                a {
+                    color: $white;
+                    &.is-active {
+                        color: $brandColor;
+                    }
+                }
+            }
+        }
+        &--modify {
+            margin:0 auto;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .l-header {
+        border: none;
+        .btn {
+            display: block;
+            img     {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .l-header__menu {
+            .search{
+                display: none;
+            }
+            ul {
+                height: 100vh;
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                position: absolute;
+                right: -320px;
+                top: 60px;
+                background:rgba(244, 159, 10, 0.4);
+                // background-color: rgba(141, 141, 141, 0.4);
+                li {
+                    width: 320px;
+                    height: 50px;
+                    display: inline;
+                    border: none;
+                    a{
+                        font-size: 20px;
+                    }
+                }
+    
+            }
+        }
+
+        .l-header__menu.show ul{
+            right: 0;
+        }
+    }
+}

@@ -17,4 +17,15 @@
             background-position: center;
         }
     }
+    &--compas {
+        width: 170px;
+        a {
+            padding-left: 25px;
+        }
+        a::after {
+            background: $btnIcon url('../img/compas.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 }
