@@ -1,14 +1,4 @@
 import '../scss/style.scss';
-<<<<<<< HEAD
-
-let btn = document.querySelector('.btn');
-let l_header = document.querySelector('.l-header__menu');
-
-btn.addEventListener('click', function(e) {
-        
-        l_header.classList.toggle('show');
-});
-=======
 import jQuery from 'jquery';
 import 'slick-carousel'
 const $ = jQuery;
@@ -41,6 +31,13 @@ $('.card-bloc--carousel').slick({
   ],
 }); 
 
+let btn = document.querySelector('.btn');
+let l_header = document.querySelector('.l-header__menu');
+
+btn.addEventListener('click', function(e) {
+        
+        l_header.classList.toggle('show');
+});
 
 
->>>>>>> 5a2f9fcef089150e480c7a45c5c136d62507dd16
+
