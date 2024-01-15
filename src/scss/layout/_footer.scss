@@ -1,0 +1,48 @@
+.l-footer {
+    &__logo {
+        margin-bottom: 30px;
+        h1 {
+            // border: 1px solid greenyellow;
+            width: 90px;
+            height: 50px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 50px;
+            a {
+                @include radio;
+
+            }
+
+        }
+    }
+    &__links {
+        margin-bottom: 40px;
+    }
+    &__txt {
+        width: 550px;
+        margin: 0 auto;
+        text-align: center;
+        p {
+            @include muliLight;
+            color: $white;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &__line{
+        width: 100%;
+        height: 0.38px;
+        background: #d8d8d8;
+    }
+}
+.l-address {
+    // border: 1px solid greenyellow;
+    width: 175px;
+    color: $white;
+    font-family: $nunito;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+}
