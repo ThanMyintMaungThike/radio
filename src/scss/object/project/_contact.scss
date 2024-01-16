@@ -1,0 +1,86 @@
+.p-bloc{
+    &--contact{
+        height: 478px;
+        background-image: linear-gradient(to top, rgba(255,255,255,0.1), $background 60%);
+        .p-contact{
+            display: flex;
+            justify-content: space-between;
+            color: $white;
+
+            &__txt{
+                h2{
+                    font-family: $playfair;
+                    font-size: 34px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    margin-bottom: 32px;
+                    width: 272px;
+                }
+
+                p{
+                    font-family: $muli;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+
+            &__circle{
+                text-align: center;
+                display: flex;
+                gap: 100px;
+                .circle1{
+                    width: 278px;
+                    height: 278px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+
+                    img{
+                        margin-top: 49px;
+                        margin-bottom: 20px;
+                    }
+
+                    h3{
+                        font-family: $playfair;
+                        font-size: 34px;
+                        font-weight: 700;
+                        line-height: 44px;
+                        margin-bottom: 20px;
+                    }
+
+                    p{
+                        font-family: $muli;
+                        font-size: 16px;
+                        font-weight: 400;
+
+                    }
+
+                    .phone{
+                        font-size: 24px;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .circle2{
+                    width: 278px;
+                    height: 278px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+
+                    img{
+                        margin-top: 65px;
+                        margin-bottom: 20px;
+                    }
+
+                     h3{
+                        font-family: $playfair;
+                        font-size: 34px;
+                        font-weight: 700;
+                        line-height: 44px;
+                    }
+                }
+            }
+        }
+    }
+}
